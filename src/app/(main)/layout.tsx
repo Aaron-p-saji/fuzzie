@@ -5,9 +5,12 @@ type Props = { children: React.ReactNode };
 
 const Layout = (props: Props) => {
   return (
-    <div className='flex overflow-hidden h-screen'>
+    <div
+      className="flex overflow-hidden"
+      style={{ width: "100vw", height: "100vh", paddingBottom: "70px" }}
+    >
       <Sidebar />
-      <div className='w-full'>
+      <div className="w-full">
         <InfoBar />
         {props.children}
       </div>

@@ -71,11 +71,11 @@ const Settings = async (props: Props) => {
           </p>
         </div>
         <ProfilePicture
-          onDelete={() => {}}
+          onDelete={removeProfileImage}
           userImage={user?.profileImage || ""}
           onUpload={uploadProfileImage}
         />
-        {/* <ProfileForms user={user} onUpdate={updateUserInfo} /> */}
+        <ProfileForms user={user} onUpdate={updateUserInfo} />
       </div>
     </div>
   );
